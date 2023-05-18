@@ -28,5 +28,10 @@ private TaskService taskService;
 	public ResponseEntity<List<Tasks>> getAllTasks(){
 		return ResponseEntity.status(HttpStatus.OK).body(taskService.getAll());
 	}
+	
+	@GetMapping("message")
+	public String messages(){
+		return "SpringBoot App Working......";
+	}
 
 }
