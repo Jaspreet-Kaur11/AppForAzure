@@ -29,7 +29,7 @@ private TaskService taskService;
 		return ResponseEntity.status(HttpStatus.OK).body(taskService.getAll());
 	}
 	
-	@GetMapping("message")
+	@GetMapping("/message")
 	public String messages(){
 		return "SpringBoot App Working......";
 	}
